@@ -3,7 +3,6 @@ name: Build & deploy node.js app to Azure Web App
 on:
   push:
     branches: [ "main" ]
-
   workflow_dispatch:
 
 jobs:
@@ -15,8 +14,7 @@ jobs:
    - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ env.NODE_VERSION }}
-        cache: 'npm'
+        node-version: "16.x"
 
     - name: npm install, build, and test
       run: |
