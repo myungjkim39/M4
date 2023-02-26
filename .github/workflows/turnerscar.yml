@@ -2,7 +2,7 @@ name: Build & deploy node.js app to Azure Web App
 
 on:
   push:
-    branches: -"main"
+    branches: -main
   workflow_dispatch:
 
 jobs:
