@@ -25,11 +25,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: get Azure credentials 
-        uses: azure/login@v1
-        with:
-          credentials: ${{ secrets.AZURE_CREDENTIALS }}
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
