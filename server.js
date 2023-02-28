@@ -8,7 +8,7 @@ env.config();
 server.use(bodyParser.json());
 
 // PORT
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 server.listen(PORT, () => {
   console.log(`listening to port ${PORT}`);
 });
