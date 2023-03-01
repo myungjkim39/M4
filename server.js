@@ -23,7 +23,7 @@ server.get("/getQuote", (req, res) => {
   res.send(price);
 })
 
-server.post("/getQuote", (req, res) => {
+server.post("/postQuote", (req, res) => {
   let carValue = req.body.carValue;
   let riskRating = req.body.riskRating;
 
