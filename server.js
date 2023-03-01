@@ -19,9 +19,10 @@ server.get("/quote", (req, res) => {
 });
 
 // Quote API
+let price;
 server.get("/getQuote", (req, res) => {
   res.send(price);
-})
+});
 
 server.post("/postQuote", (req, res) => {
   let carValue = req.body.carValue;
