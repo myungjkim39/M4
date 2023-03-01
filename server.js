@@ -28,7 +28,7 @@ server.post("/postQuote", (req, res) => {
   let carValue = req.body.carValue;
   let riskRating = req.body.riskRating;
 
-  const price = quote(carValue, riskRating);
+  price = quote(carValue, riskRating);
 
   res.send(price);
 });
